@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/country.css">
+    <link rel="stylesheet" href="./src/css/mediaqueries.css">
+
+    <title>Where in the World?</title>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <h1>Where in the World?</h1>
+            <button type="button" aria-label="Switch between bright and dark theme" id="theme-toggler">
+                <i class="fa-regular fa-moon"></i>
+                Dark
+            </button>
+        </div>
+    </header>
+    <main>
+        <a href="./index.html" aria-label="Go back to main page" class="back-button">&lAarr; Back</a>
+        <section class="country-container" id="country-container">
+        </section>
+    </main>
+    <script src="./src/js/country.js"></script>
+    <script src="./src/js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.form-section
+{
+    width: var(--maximum-width);
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    justify-content: space-between;
+    margin: var(--main-gap) 0;
+}
+
+.search-input, .region-select
+{
+    color: var(--color-input);
+    background-color: var(--color-background);
+    padding: 1rem;
+    font-size: var(--small-font);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
+
+.region-select
+{
+    max-width: 40%;
+}
+
+
+.countries-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    gap:var(--main-gap);
+}
+
+.country-card
+{
+    border: none;
+    width: var(--maximum-width);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.flag-container img
+{
+    width: var(--maximum-width);
+    height: 15rem;
+    object-fit: cover;
+}
+
+.country-info
+{
+    margin-top: var(--half-gap);
+    padding-left: 0.5rem;
+}
+
+.country-info h3
+{
+    margin-bottom: var(--small-gap);
+}
+
+.country-info p
+{
+    margin-bottom: 0.5rem;
+}
+
+.country-info:last-child
+{
+    margin-bottom: 1.5rem;
+}
+
+.country-info h3
+{
+    font-size: var(--big-font);
+    font-weight: var(--bolder-font);
+}

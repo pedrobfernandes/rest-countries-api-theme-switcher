@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/countries.css">
+    <link rel="stylesheet" href="./src/css/mediaqueries.css">
+    
+    <title>Where in the World</title>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <h1>Where in the World?</h1>
+            <button type="button" aria-label="Switch between bright and dark theme" id="theme-toggler">
+                <i class="fa-regular fa-moon"></i>
+                Dark
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2 class="visually-hidden"> Search for a country or filter a countrry or region</h2>
+            <form role="search">
+                <label for="search-input" class="visually-hidden">Enter name of the country: </label>
+                <input type="text" placeholder="Search for a country..." required id="search-input" class="search-input">
+                <label for="region-select" class="visually-hidden">Select a region: </label>
+                <select name="region-select" id="region-select" class="region-select">
+                    <option value="All">All</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </form>
+        </section>
+        <section class="countries-section">
+            <h2 class="visually-hidden">View all the countries</h2>
+            <div class="countries-container" id="countries-container"></div>
+        </section>
+    </main>
+    <script src="./src/js/countries.js"></script>
+    <script src="./src/js/theme.js"></script>
+</body>
+</html>

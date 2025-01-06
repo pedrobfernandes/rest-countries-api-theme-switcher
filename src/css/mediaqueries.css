@@ -1,0 +1,72 @@
+@media screen and (min-width: 768px)
+{
+    form
+    {
+        flex-direction: row;
+    }
+
+    .search-input
+    {
+        flex: 1;
+        max-width: calc(var(--maximum-width) - 70%);
+    }
+
+    .region-select
+    {
+        width: auto;
+    }
+
+    .country-info-container
+    {
+        max-width: 90%;
+        margin: var(--main-gap) auto;
+    }
+
+    .country-flag-container img
+    {
+        height: 30rem;
+    }
+}
+
+@media screen and (min-width: 1300px)
+{
+    .country-info-container
+    {
+        width: var(--maximum-width);
+        flex-direction: row;
+    }
+
+    .text-info
+    {
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .country-flag-container
+    {
+        flex-basis: 20%;
+    }
+
+    .country-flag-container img
+    {
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    .country-flex-left
+    {
+        flex-basis: 40%;
+    }
+
+    .country-flex-right
+    {
+        flex-basis: 50%;
+    }
+
+    .borders
+    {
+        margin-top: -4rem;
+    }
+}
